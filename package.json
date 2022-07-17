@@ -1,0 +1,25 @@
+{
+  "name": "proyectogalactic",
+  "version": "1.0.0",
+  "description": "**Proyecto Tienda cósmica**",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauGiraldo/ProyectoGalactic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauGiraldo/ProyectoGalactic/issues"
+  },
+  "homepage": "https://github.com/PauGiraldo/ProyectoGalactic#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+  
+}

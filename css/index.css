@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+.header {
+  background: linear-gradient(to right, #ff00cc, #333399); 
+   background-size: 200% 200%;
+   animation: movimiento 5s linear infinite alternate;
+  
+} 
+
+@keyframes movimiento {
+  from{
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 100% 100%;
+  }
+}
+
+
+.header_logo {
+  margin: 0;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.header_menu ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style:none;
+  padding-bottom: 25px;
+}
+
+.header_menu ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;    
+  display:inline-block;
+}
+
+li a.active, li a:hover {
+  background:linear-gradient(blue, blueviolet,violet);
+  transition: 0.5s;
+}
+
+#intro {
+  background-image: url(../Imgs/fondoPrincipal-01-01.png);
+  background-size: cover;
+  display:grid;
+  text-align: center;
+  min-height: 400px;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#intro .intro_tittle {
+  min-height: 100px;
+  padding:10px 10px;
+  color: aliceblue;
+  border-color: aliceblue;
+  display: grid;
+  font-size: 80px;
+}
+
+#intro .intro_text{
+  text-align: center;
+  border-radius: 10px;
+  background:linear-gradient(blue, blueviolet,violet);
+  color: white;
+  width: 300px;
+  text-decoration: none;
+  margin: 0px 2px;
+  padding: 10px;
+  position: relative;
+  border-style: double;
+  font-size:medium;
+
+}
+
+.flex-container{
+   background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  
+   background-size: 200% 200%;
+   animation: movimiento 5s linear infinite alternate;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+   padding: 10px;
+   text-align: center;
+  
+}
+
+.flex-item {
+  background-color:black;
+  color: white;
+  text-align: center;
+  display: grid;
+  font-size: 8px;
+  border-radius: 12px;
+  border-color: aliceblue;
+
+}
+
+.flex-item img {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  border-radius: 12px;
+}
+
+.video{
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+    justify-content: center; 
+    display: flex;
+    border-radius: 12px;
+}
+
+#mensaje {
+background-color: black;
+color: aliceblue;
+text-align: center;
+font-size:30px;
+display: flex;
+flex-flow: column;
+padding: 12px;
+}
+
+#mensaje .mensaje_newsletter{
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+}
+
+#mensaje .mensaje_name {
+  color: blueviolet;
+  padding: 3px;
+}
+
+#mensaje .mensaje_formulario {
+  color: blueviolet;
+}
+
+#mensaje .mensaje_boton{
+  margin: 0 5px;
+  padding: 10px;
+  background-color: blueviolet;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+.footer {
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  
+  background-size: 200% 200%;
+  animation: movimiento 5s linear infinite alternate;
+  grid-column-start: 1fr 1fr 1fr;
+  text-align:center;
+}
+
+
+
+.primer_titulo {
+  color: blueviolet;
+  font-size: 100px;
+}
+
+.grid-container {
+   background:linear-gradient(blue, blueviolet,violet);
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 5px;
+   padding: 1px 5px;
+   overflow: hidden;
+   align-content:space-between;
+
+}
+
+.grid-container .grid-1 {
+  width: 32%;
+  margin: 10px 10px;
+  padding: 30px;
+ 
+}
+
+.grid-container .grid-2 {
+  width: 32%;
+  margin: 10px 10px;
+  padding: 30px;
+  
+}
+
+.grid-container .grid-3 {
+  width: 32%;
+  margin: 10px 10px;
+  padding: 30px;
+
+}
+
+.grid-container .grid-4 {
+  width: 32%;
+  margin: 10px 10px;
+  padding: 30px;
+ 
+}
+
+
+.grid-container .grid-1 input{
+  background-color: blueviolet;
+  font-size: large;
+  border: blueviolet;
+  margin: 10px 40px;
+  padding: 10px 20px;
+  
+}
+
+
+.grid-container .grid-2 input{
+  background-color: blueviolet;
+  font-size: large;
+  border: blueviolet;
+  margin:10px 40px;
+  padding: 10px 20px;
+ 
+}
+
+.grid-container .grid-3 input{
+  background-color: blueviolet;
+  font-size: large;
+  border: blueviolet;
+  margin:10px 40px;
+  padding: 10px 20px;
+  
+
+}
+
+
+.grid-container .grid-4 input{
+  background-color: blueviolet;
+  font-size: large;
+  border: blueviolet;
+  margin:10px 40px;
+  padding: 10px 20px;
+  
+}
+
+
+.grid-container img {
+  width: 200px;
+  height: 70%;
+  filter: grayscale(1);
+  display: grid;
+}
+
+.grid-container img:hover {
+  filter: none;
+}
+
+.grid-container input:hover {
+  color: aliceblue;
+
+}
+
+.nosotros_img {
+  padding: 10px;
+  margin: 15px;
+}
+
+.descripcion_nosotros {
+  text-align:center;
+  padding: 12px;
+}
+
+@media (min-width: 720px) {
+  .header_menu ul {
+      justify-content:space-between;
+      flex-direction: row;
+      overflow: hidden;
+      padding-bottom: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  .footer {
+      flex-direction: row;
+      text-align: center;
+      display: block;
+      margin: auto;}
+
+}
+
+@media (min-width: 720px) {
+  .footer .logo_1 {
+    padding: 10px;
+    margin: 10px;
+    border: 40px;
+  
+    float: center;
+    width: 45px;
+      }
+}
+
+@media (min-width: 720px) {
+  .footer .logo_2{
+    padding: 10px;
+    margin: 10px;
+    border: 40px;
+    float: center;
+    width: 45px;
+      }
+}
+
+@media (min-width: 720px) {
+  .footer .logo_3 {
+    padding: 10px;
+    margin: 10px;
+    border: 60px;
+    float: center;
+    width: 45px;
+      }
+}
+
+
+
+
+
