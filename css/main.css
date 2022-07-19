@@ -3,4 +3,77 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
+#contact {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  background-size: 100% 10rem;
+  background-position: top;
+  text-transform: uppercase;
+  color: blueviolet; }
+  #contact h1 {
+    margin: 5rem 0;
+    font-size: 2.5rem;
+    text-align: center; }
+    #contact h1 span {
+      color: violet;
+      font-style: italic; }
+  #contact .contact-container {
+    width: 90vw; }
+    #contact .contact-container form .column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+      grid-gap: 2rem; }
+      #contact .contact-container form .column .box {
+        outline: none;
+        border: solid;
+        border-color: blueviolet;
+        background: black;
+        color: #fff;
+        text-transform: uppercase;
+        font-style: italic;
+        height: 4rem;
+        padding: 0 2rem; }
+        #contact .contact-container form .column .box::placeholder {
+          color: #fff; }
+    #contact .contact-container form .msg-box {
+      width: 100%;
+      resize: none;
+      height: 10rem;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+      outline: none;
+      border: solid;
+      border-color: blueviolet;
+      background: black;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic; }
+      #contact .contact-container form .msg-box::placeholder {
+        color: #fff; }
+    #contact .contact-container input[type="submit"] {
+      outline: none;
+      border: solid;
+      border-color: blueviolet;
+      background: black;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      background: black;
+      cursor: pointer; }
+      #contact .contact-container input[type="submit"]:hover {
+        background: blueviolet; }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%; } }
+
+@media (max-width: 768px) {
+  #contact .contact-container form .column {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }

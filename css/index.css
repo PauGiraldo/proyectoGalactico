@@ -69,7 +69,7 @@ li a.active, li a:hover {
   color: aliceblue;
   border-color: aliceblue;
   display: grid;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 #intro .intro_text{
@@ -83,7 +83,8 @@ li a.active, li a:hover {
   padding: 10px;
   position: relative;
   border-style: double;
-  font-size:medium;
+  font-size:large;
+  display: inline-block;
 
 }
 
