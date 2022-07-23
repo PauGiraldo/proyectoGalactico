@@ -5,10 +5,11 @@
 }
 
 
-.header {
+.main-header{
   background: linear-gradient(to right, #ff00cc, #333399); 
    background-size: 200% 200%;
    animation: movimiento 5s linear infinite alternate;
+   padding: 20px;
   
 } 
 
@@ -23,7 +24,7 @@
 }
 
 
-.header_logo {
+/*.header_logo {
   margin: 0;
   padding: 15px 20px;
   text-align: center;
@@ -49,10 +50,10 @@
 li a.active, li a:hover {
   background:linear-gradient(blue, blueviolet,violet);
   transition: 0.5s;
-}
+}*/
+
 
 #intro {
-  background-image: url(../Imgs/fondoPrincipal-01-01.png);
   background-size: cover;
   display:grid;
   text-align: center;
@@ -63,7 +64,7 @@ li a.active, li a:hover {
   height: 100vh;
 }
 
-#intro .intro_tittle {
+  #intro .intro_tittle {
   min-height: 100px;
   padding:10px 10px;
   color: aliceblue;
@@ -72,7 +73,7 @@ li a.active, li a:hover {
   font-size: 60px;
 }
 
-#intro .intro_text{
+/*#intro .intro_text{
   text-align: center;
   border-radius: 10px;
   background:linear-gradient(blue, blueviolet,violet);
@@ -86,7 +87,7 @@ li a.active, li a:hover {
   font-size:large;
   display: inline-block;
 
-}
+}*/
 
 .flex-container{
   display: grid;
@@ -330,8 +331,4 @@ padding: 12px;
     width: 45px;
       }
 }
-
-
-
-
 
